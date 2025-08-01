@@ -1,10 +1,10 @@
-import { Header } from './components/Header';
-import { Hero } from './components/Hero';
-import { About } from './components/About';
-import { Activities } from './components/Activities';
-import { Impact } from './components/Impact';
-import { Contact } from './components/Contact';
-import { Footer } from './components/Footer';
+import { Header } from './components/layout/Header';
+import { Hero } from './components/layout/Hero';
+import { About } from './components/layout/About';
+import { Activities } from './components/layout/Activities';
+import { Impact } from './components/layout/Impact';
+import { Contact } from './components/layout/Contact';
+import { Footer } from './components/layout/Footer';
 
 function App() {
 	return (
