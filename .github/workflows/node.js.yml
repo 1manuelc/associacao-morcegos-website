@@ -45,17 +45,37 @@ jobs:
     needs: build
 
     steps:
-      - name: Call Vercel Deploy Hook
-        id: vercel_deploy
+      - name: Trigger deploy hook and wait for completion
+        env:
+          VERCEL_DEPLOY_HOOK_URL: ${{ secrets.VERCEL_DEPLOY_HOOK_URL }}
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
         run: |
-          response=$(curl -s -w "%{http_code}" -X POST ${{ secrets.VERCEL_DEPLOY_HOOK_URL }})
-          body=${response::-3}
-          code=${response: -3}
-          echo "Response code: $code"
-          echo "Response body: $body"
-          if [ "$code" = "200" ] || [ "$code" = "201" ]; then
-            echo "✅ Deploy hook triggered successfully!"
-          else
-            echo "❌ Failed to trigger deploy hook"
+          echo "Triggering Vercel deploy hook..."
+          response=$(curl -s -w "%{http_code}" -X POST "$VERCEL_DEPLOY_HOOK_URL")
+          http_code="${response: -3}"
+          body="${response:0:${#response}-3}"
+
+          if [ "$http_code" != "201" ]; then
+            echo "Failed to trigger deploy hook, HTTP code: $http_code"
+            echo "Response body: $body"
             exit 1
           fi
+
+          job_id=$(echo "$body" | jq -r '.job.id')
+          echo "Deploy job ID: $job_id"
+
+          echo "Waiting for deploy to complete..."
+          while true; do
+            sleep 5
+            status_response=$(curl -s -H "Authorization: Bearer $VERCEL_TOKEN" "https://api.vercel.com/v6/deployments/${job_id}")
+            state=$(echo "$status_response" | jq -r '.state')
+            echo "Deploy status: $state"
+
+            if [[ "$state" == "READY" ]]; then
+              echo "Deploy succeeded!"
+              exit 0
+            elif [[ "$state" == "ERROR" ]]; then
+              echo "Deploy failed!"
+              exit 1
+            fi
+          done
