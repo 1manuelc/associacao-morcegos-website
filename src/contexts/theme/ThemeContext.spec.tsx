@@ -1,6 +1,7 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { render, screen } from '@testing-library/react';
-import { ThemeProvider, useTheme } from './ThemeContext';
+import { ThemeProvider } from './ThemeProvider';
+import { useTheme } from './useTheme';
 import userEvent from '@testing-library/user-event';
 
 // Componente de teste para acessar o contexto
