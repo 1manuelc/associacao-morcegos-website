@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Menu, X, Eye } from 'lucide-react';
-import { ThemeToggle } from '../ThemeToggle';
+import { ThemeToggle } from '../fragments/ThemeToggle';
 
 export function Header() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
