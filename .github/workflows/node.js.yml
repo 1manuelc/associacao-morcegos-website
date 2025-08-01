@@ -45,15 +45,17 @@ jobs:
     needs: build
 
     steps:
-      - uses: actions/checkout@v4
-      - name: Download dist artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: dist
-          path: dist
-      - name: Install Vercel CLI
-        run: npm install -g vercel
-      - name: Deploy to Vercel
-        env:
-          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-        run: vercel --prebuilt --prod --yes --token ${{ secrets.VERCEL_TOKEN }}
+      - name: Call Vercel Deploy Hook
+        id: vercel_deploy
+        run: |
+          response=$(curl -s -w "%{http_code}" -X POST ${{ secrets.VERCEL_DEPLOY_HOOK_URL }})
+          body=${response::-3}
+          code=${response: -3}
+          echo "Response code: $code"
+          echo "Response body: $body"
+          if [ "$code" = "200" ] || [ "$code" = "201" ]; then
+            echo "✅ Deploy hook triggered successfully!"
+          else
+            echo "❌ Failed to trigger deploy hook"
+            exit 1
+          fi
