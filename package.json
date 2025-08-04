@@ -9,7 +9,6 @@
     "preview": "vite preview",
     "lint": "eslint .",
     "build": "tsc && vite build",
-    "deploy": "gh-pages -d dist",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:ui": "vitest --ui"
