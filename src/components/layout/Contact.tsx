@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import {
 	MapPin,
 	Phone,
@@ -11,39 +10,6 @@ import {
 } from 'lucide-react';
 
 export function Contact() {
-	const [formData, setFormData] = useState({
-		name: '',
-		email: '',
-		phone: '',
-		message: '',
-		type: 'volunteer',
-	});
-
-	const handleChange = (
-		e: React.ChangeEvent<
-			HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-		>
-	) => {
-		setFormData({
-			...formData,
-			[e.target.name]: e.target.value,
-		});
-	};
-
-	const handleSubmit = (e: React.FormEvent) => {
-		e.preventDefault();
-		// Handle form submission here
-		console.log('Form submitted:', formData);
-		alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
-		setFormData({
-			name: '',
-			email: '',
-			phone: '',
-			message: '',
-			type: 'volunteer',
-		});
-	};
-
 	const contactInfo = [
 		{
 			icon: MapPin,
@@ -109,123 +75,8 @@ export function Contact() {
 					</p>
 				</div>
 
-				<div className='grid lg:grid-cols-2 gap-12'>
-					{/* Contact Form */}
-					<div className='bg-white dark:bg-dark-700 rounded-xl shadow-sm p-8'>
-						<h3 className='text-2xl font-bold text-gray-900 dark:text-white mb-6'>
-							Envie uma Mensagem
-						</h3>
-						<form onSubmit={handleSubmit} className='space-y-6'>
-							<div className='grid md:grid-cols-2 gap-6'>
-								<div>
-									<label
-										htmlFor='name'
-										className='block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2'
-									>
-										Nome Completo
-									</label>
-									<input
-										type='text'
-										id='name'
-										name='name'
-										value={formData.name}
-										onChange={handleChange}
-										required
-										className='w-full px-4 py-3 border border-gray-300 dark:border-gray-600 dark:bg-dark-800 dark:text-white rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors duration-200'
-										placeholder='Seu nome'
-									/>
-								</div>
-								<div>
-									<label
-										htmlFor='email'
-										className='block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2'
-									>
-										E-mail
-									</label>
-									<input
-										type='email'
-										id='email'
-										name='email'
-										value={formData.email}
-										onChange={handleChange}
-										required
-										className='w-full px-4 py-3 border border-gray-300 dark:border-gray-600 dark:bg-dark-800 dark:text-white rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors duration-200'
-										placeholder='seu@email.com'
-									/>
-								</div>
-							</div>
-
-							<div className='grid md:grid-cols-2 gap-6'>
-								<div>
-									<label
-										htmlFor='phone'
-										className='block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2'
-									>
-										Telefone
-									</label>
-									<input
-										type='tel'
-										id='phone'
-										name='phone'
-										value={formData.phone}
-										onChange={handleChange}
-										className='w-full px-4 py-3 border border-gray-300 dark:border-gray-600 dark:bg-dark-800 dark:text-white rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors duration-200'
-										placeholder='(11) 99999-9999'
-									/>
-								</div>
-								<div>
-									<label
-										htmlFor='type'
-										className='block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2'
-									>
-										Interesse em
-									</label>
-									<select
-										id='type'
-										name='type'
-										value={formData.type}
-										onChange={handleChange}
-										className='w-full px-4 py-3 border border-gray-300 dark:border-gray-600 dark:bg-dark-800 dark:text-white rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors duration-200'
-									>
-										<option value='volunteer'>Voluntariado</option>
-										<option value='donation'>Doações</option>
-										<option value='partnership'>Parcerias</option>
-										<option value='activities'>
-											Participar das Atividades
-										</option>
-										<option value='other'>Outros</option>
-									</select>
-								</div>
-							</div>
-
-							<div>
-								<label
-									htmlFor='message'
-									className='block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2'
-								>
-									Mensagem
-								</label>
-								<textarea
-									id='message'
-									name='message'
-									value={formData.message}
-									onChange={handleChange}
-									rows={5}
-									required
-									className='w-full px-4 py-3 border border-gray-300 dark:border-gray-600 dark:bg-dark-800 dark:text-white rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors duration-200'
-									placeholder='Conte-nos como podemos ajudar ou como você gostaria de contribuir...'
-								></textarea>
-							</div>
-
-							<button
-								type='submit'
-								className='w-full bg-primary-800 dark:bg-primary-600 text-white py-4 rounded-lg font-semibold hover:bg-primary-900 dark:hover:bg-primary-700 transition-colors duration-200'
-							>
-								Enviar Mensagem
-							</button>
-						</form>
-					</div>
-
+				<div className='flex gap-12'>
+					{/* TODO: ajeitar flex */}
 					{/* Contact Info & Help Ways */}
 					<div className='space-y-8'>
 						{/* Contact Information */}
