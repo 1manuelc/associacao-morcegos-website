@@ -51,6 +51,7 @@ export function Footer() {
 						</p>
 						<div className='flex space-x-4'>
 							<a
+							target='blank'
 								href='https://www.instagram.com/associacao_morcegos?igsh=MTE5Y2Y4OTNtbnBldg=='
 								className='bg-gray-800 dark:bg-dark-800 p-2 rounded-lg hover:bg-gray-700 dark:hover:bg-dark-700 transition-colors duration-200'
 							>
