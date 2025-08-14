@@ -124,7 +124,7 @@ export function Contact() {
 											key={index}
 											className='flex items-start p-4 bg-zinc-100 shadow-sm dark:bg-zinc-800 rounded-lg'
 										>
-											<Icon className='w-6 h-6 text-accent-500 dark:text-accent-400 mr-3 flex-shrink-0 mt-1' />
+											<Icon className='w-6 h-6 text-primary-500 dark:text-primary-400 mr-3 flex-shrink-0 mt-1' />
 											<div>
 												<h4 className='font-semibold text-zinc-900 dark:text-white mb-1'>
 													{way.title}

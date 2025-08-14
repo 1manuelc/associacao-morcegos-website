@@ -1,10 +1,4 @@
-import {
-	Eye,
-	Instagram,
-	Mail,
-	Phone,
-	MapPin,
-} from 'lucide-react';
+import { Eye, Instagram, Mail, Phone, MapPin } from 'lucide-react';
 
 export function Footer() {
 	const currentYear = new Date().getFullYear();
@@ -24,7 +18,7 @@ export function Footer() {
 		'Oficinas de Música',
 		'Massoterapia',
 		'Muay Thai',
-		'Culinária no Escuro'
+		'Culinária no Escuro',
 	];
 
 	return (
@@ -45,11 +39,13 @@ export function Footer() {
 							</div>
 						</div>
 						<p className='text-gray-300 dark:text-gray-400 mb-6 leading-relaxed'>
-							A Associação busca ser um agente definitivo incorporando a comunidade no mapa do desenvolvimento do Estado do Ceará, destacando a expansão de Educação Inclusiva através deste projeto.
+							A Associação busca ser um agente definitivo incorporando a
+							comunidade no mapa do desenvolvimento do Estado do Ceará,
+							destacando a expansão de Educação Inclusiva através deste projeto.
 						</p>
 						<div className='flex space-x-4'>
 							<a
-							target='blank'
+								target='blank'
 								href='https://www.instagram.com/associacao_morcegos?igsh=MTE5Y2Y4OTNtbnBldg=='
 								className='bg-gray-800 dark:bg-dark-800 p-2 rounded-lg hover:bg-gray-700 dark:hover:bg-dark-700 transition-colors duration-200'
 							>
@@ -118,7 +114,7 @@ export function Footer() {
 					</div>
 				</div>
 
-				<div className='border-t border-zinc-800 dark:border-zinc-700 mt-12 pt-8'>
+				<div className='border-t border-zinc-600 dark:border-zinc-700 mt-12 pt-8'>
 					<div className='flex flex-col md:flex-row justify-between items-center'>
 						<p className='text-zinc-400 dark:text-zinc-500 mb-4 md:mb-0'>
 							© {currentYear} Associação dos Morcegos. Todos os direitos
