@@ -1,8 +1,6 @@
 import {
 	Eye,
-	Facebook,
 	Instagram,
-	Linkedin,
 	Mail,
 	Phone,
 	MapPin,
