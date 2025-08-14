@@ -6,26 +6,26 @@ export function About() {
 			icon: Target,
 			title: 'Missão',
 			description:
-				'Promover a inclusão social e a autonomia de pessoas com deficiência visual através de programas educacionais, tecnológicos e de capacitação profissional.',
+				'Promover a inclusão social e a autonomia de pessoas com deficiência visual por meio de programas de educação e capacitação profissional', 
 		},
 		{
 			icon: Eye,
 			title: 'Visão',
 			description:
-				'Ser reconhecida como referência nacional em inclusão e acessibilidade, criando uma sociedade mais justa e igualitária para todos.',
+				'Construir uma sociedade mais justa e igualitária, onde a acessibilidade e a autonomia sejam a base para o desenvolvimento pleno das pessoas com deficiência visual.',
 		},
 		{
 			icon: Lightbulb,
 			title: 'Inovação',
 			description:
-				'Utilizar tecnologias assistivas e métodos inovadores para superar barreiras e criar novas oportunidades de desenvolvimento.',
+				'Desenvolver métodos criativos para superar barreiras, tornando o aprendizado e a vida social mais leves e acessíveis.',
 		},
 		{
 			icon: Globe,
 			title: 'Impacto',
 			description:
-				'Transformar não apenas vidas individuais, mas comunidades inteiras, promovendo conscientização e mudança social.',
-		},
+				'Provar, com cada conquista, que a inclusão plena é possível, transformando vidas e comunidades ao espalhar conscientização e fortalecer laços.',
+		}
 	];
 
 	return (
@@ -39,11 +39,11 @@ export function About() {
 						Sobre a Associação dos Morcegos
 					</h2>
 					<p className='text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed'>
-						Fundada em 2009, nossa organização nasceu da necessidade de criar um
-						espaço de acolhimento e desenvolvimento para pessoas com deficiência
-						visual. Inspirados na capacidade única dos morcegos de navegar no
-						escuro, acreditamos que todos podem encontrar seu caminho com o
-						apoio adequado.
+						Fundada em 2013, a Associação dos Morcegos nasceu da
+						necessidade de criar um espaço de acolhimento e desenvolvimento
+						para pessoas com deficiência visual. Nossa organização,
+						que se estabeleceu legalmente em Ubajara, busca transformar
+						vidas através da inclusão e autonomia.
 					</p>
 				</div>
 
@@ -84,22 +84,27 @@ export function About() {
 						</h3>
 						<div className='space-y-4 text-gray-600 dark:text-gray-300'>
 							<p>
-								Tudo começou quando um grupo de voluntários percebeu a falta de
-								recursos e oportunidades para pessoas com deficiência visual em
-								nossa comunidade. Unidos pelo desejo de fazer a diferença,
-								criamos a Associação dos Morcegos.
+								A Associação foi fundada em Sobral em 23 de agosto de 2013, 
+								com o objetivo de promover a educação e a autonomia para 
+								pessoas com deficiência visual. Em fevereiro de 2014, 
+								a secretaria de educação de Sobral disponibilizou uma 
+								sala, onde iniciaram as primeiras aulas para um grupo
+								de 15 alunos, composto por crianças e adultos.
 							</p>
 							<p>
-								O nome foi escolhido em homenagem a esses extraordinários
-								animais que, mesmo sem enxergar no escuro, conseguem navegar com
-								precisão usando outros sentidos. Esta é a filosofia que guia
-								nosso trabalho: desenvolver todas as potencialidades de cada
-								pessoa.
+								Ainda em 2014, a associação foi transferida para o município
+								de Ubajara a convite dos líderes comunitários Maria de Fátima 
+								do Nascimento e Manoel Carlos Ramos. Com o apoio de parceiros 
+								locais, a Associação divulgou seu projeto e realizou uma Assembleia 
+								Geral na Casa da Cultura, mobilizando toda a comunidade. A partir de 
+							    janeiro de 2015, a organização passou a funcionar legalmente.
 							</p>
 							<p>
-								Hoje, após 15 anos de dedicação, já impactamos mais de 500 vidas
-								e continuamos crescendo, sempre com o objetivo de criar uma
-								sociedade mais inclusiva e acessível para todos.
+								A associação busca transformar as vidas das pessoas com deficiência 
+								visual de todas as idades, atendendo às suas necessidades de autonomia 
+								para uma vida independente. Com o projeto "Independência para Cegos", 
+								a Associação dos Morcegos se tornou um agente incorporado ao desenvolvimento 
+								do estado do Ceará, destacando-se pela expansão da Educação Inclusiva.
 							</p>
 						</div>
 					</div>
