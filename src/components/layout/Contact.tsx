@@ -19,7 +19,7 @@ export function Contact() {
 		{
 			icon: Phone,
 			title: 'Telefones',
-			details: ['(11) 3456-7890'],
+			details: ['(88) 9292-4023'],
 		},
 		{
 			icon: Mail,

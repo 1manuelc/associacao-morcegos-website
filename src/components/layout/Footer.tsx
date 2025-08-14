@@ -40,7 +40,7 @@ export function Footer() {
 								<h3 className='font-bold text-lg'>
 									Associação Morcegos em Ação
 								</h3>
-								<p className='text-sm text-zinc-400 dark:text-zinc-500'>
+								<p className='text-sm text-gray-400 dark:text-gray-500'>
 									CNPJ: 18.866.308/0001-80
 								</p>
 							</div>
@@ -106,9 +106,9 @@ export function Footer() {
 								</div>
 							</div>
 							<div className='flex items-center'>
-								<Phone className='w-5 h-5 text-zinc-400 dark:text-zinc-500 mr-3' />
-								<p className='text-zinc-300 dark:text-zinc-400'>
-									(11) 3456-7890
+								<Phone className='w-5 h-5 text-gray-400 dark:text-gray-500 mr-3' />
+								<p className='text-gray-300 dark:text-gray-400'>
+									(88) 9292-4023
 								</p>
 							</div>
 							<div className='flex items-center'>
