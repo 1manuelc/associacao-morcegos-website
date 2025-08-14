@@ -75,10 +75,10 @@ export function Contact() {
 					</p>
 				</div>
 
-				<div className='flex gap-12'>
+				<div className='flex gap-12 items-center justify-center'>
 					{/* TODO: ajeitar flex */}
 					{/* Contact Info & Help Ways */}
-					<div className='space-y-8'>
+					<div className='flex flex-column space-x-6'>
 						{/* Contact Information */}
 						<div className='bg-white dark:bg-zinc-900 rounded-xl shadow-md p-8'>
 							<h3 className='text-2xl font-bold text-zinc-900 dark:text-white mb-6'>
