@@ -93,14 +93,14 @@ export function Activities() {
 	return (
 		<section
 			id='activities'
-			className='py-20 bg-gray-50 dark:bg-dark-800 transition-colors duration-300'
+			className='py-20 bg-zinc-100 dark:bg-zinc-800 transition-colors duration-300'
 		>
 			<div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
 				<div className='text-center mb-16'>
-					<h2 className='text-4xl font-bold text-gray-900 dark:text-white mb-4'>
+					<h2 className='text-4xl font-bold text-zinc-900 dark:text-white mb-4'>
 						Nossas Atividades
 					</h2>
-					<p className='text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto'>
+					<p className='text-xl text-zinc-600 dark:text-zinc-300 max-w-3xl mx-auto'>
 						Oferecemos uma ampla gama de programas e atividades desenvolvidas
 						especificamente para promover autonomia, desenvolvimento pessoal e
 						inclusão social.
@@ -113,7 +113,7 @@ export function Activities() {
 						return (
 							<div
 								key={index}
-								className={`bg-white dark:bg-dark-700 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden group ${activity.className}`}
+								className={`bg-white dark:bg-zinc-900 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden group ${activity.className}`}
 							>
 								<div className='aspect-w-16 aspect-h-9'>
 									<img
@@ -127,15 +127,15 @@ export function Activities() {
 										<div className='bg-primary-800 dark:bg-primary-600 p-2 rounded-lg mr-3'>
 											<Icon className='w-5 h-5 text-white' />
 										</div>
-										<h3 className='text-xl font-semibold text-gray-900 dark:text-white'>
+										<h3 className='text-xl font-semibold text-zinc-900 dark:text-white'>
 											{activity.title}
 										</h3>
 									</div>
-									<p className='text-gray-600 dark:text-gray-300 mb-4 leading-relaxed'>
+									<p className='text-zinc-600 dark:text-zinc-300 mb-4 leading-relaxed'>
 										{activity.description}
 									</p>
-									<div className='flex items-center text-sm text-secondary-600 dark:text-secondary-400 font-medium'>
-										<div className='w-2 h-2 bg-secondary-600 dark:bg-secondary-400 rounded-full mr-2'></div>
+									<div className='flex items-center text-sm text-accent-600 dark:text-accent-300 font-medium'>
+										<div className='w-2 h-2 bg-accent-600 dark:bg-accent-300 rounded-full mr-2'></div>
 										{activity.participants}
 									</div>
 								</div>

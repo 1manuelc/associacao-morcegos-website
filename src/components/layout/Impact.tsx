@@ -55,7 +55,7 @@ export function Impact() {
 	return (
 		<section
 			id='impact'
-			className='py-20 bg-white dark:bg-dark-900 transition-colors duration-300'
+			className='py-20 bg-white dark:bg-zinc-900 transition-colors duration-300'
 		>
 			<div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
 				<div className='text-center mb-16'>
@@ -74,7 +74,7 @@ export function Impact() {
 						const Icon = stat.icon;
 						return (
 							<div key={index} className='text-center'>
-								<div className='bg-gradient-to-br from-primary-50 to-indigo-100 dark:from-dark-700 dark:to-dark-600 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4'>
+								<div className='bg-gradient-to-br from-primary-50 to-indigo-100 dark:from-zinc-700 dark:to-dark-600 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4'>
 									<Icon className='w-10 h-10 text-primary-800 dark:text-primary-400' />
 								</div>
 								<div className='text-4xl font-bold text-gray-900 dark:text-white mb-2'>
@@ -92,7 +92,7 @@ export function Impact() {
 				</div>
 
 				{/* Testimonials */}
-				<div className='bg-gray-50 dark:bg-dark-800 rounded-2xl p-8 md:p-12'>
+				<div className='bg-gray-50 dark:bg-zinc-800 rounded-2xl p-8 md:p-12'>
 					<h3 className='text-3xl font-bold text-gray-900 dark:text-white text-center mb-12'>
 						Histórias de Transformação
 					</h3>
@@ -100,7 +100,7 @@ export function Impact() {
 						{testimonials.map((testimonial, index) => (
 							<div
 								key={index}
-								className='bg-white dark:bg-dark-700 p-6 rounded-xl shadow-sm'
+								className='bg-white dark:bg-zinc-900 p-6 rounded-xl shadow-md'
 							>
 								<div className='flex items-center mb-4'>
 									<img
@@ -138,15 +138,9 @@ export function Impact() {
 					<div className='flex flex-col sm:flex-row gap-4 justify-center'>
 						<a
 							href='#contact'
-							className='bg-accent-500 dark:bg-accent-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-accent-600 dark:hover:bg-accent-700 transition-colors duration-200'
+							className='bg-primary-700 dark:bg-primary-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary-800 dark:hover:bg-primary-700 transition-colors duration-200'
 						>
-							Quero Ajudar
-						</a>
-						<a
-							href='#activities'
-							className='bg-secondary-600 dark:bg-secondary-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-secondary-700 dark:hover:bg-secondary-600 transition-colors duration-200'
-						>
-							Participar das Atividades
+							Quero Participar
 						</a>
 					</div>
 				</div>

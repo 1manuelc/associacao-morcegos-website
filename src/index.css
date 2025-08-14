@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+* {
+	scroll-margin-top: 40px;
+	scroll-behavior: smooth;
+}

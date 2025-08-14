@@ -4,7 +4,7 @@ export function Hero() {
 	return (
 		<section
 			id='home'
-			className='bg-gradient-to-br from-primary-50 to-indigo-100 dark:from-dark-800 dark:to-dark-700 py-20 transition-colors duration-300'
+			className='bg-gradient-to-b from-zinc-100 to-primary-100 dark:from-zinc-900 dark:to-zinc-800 py-12 transition-colors duration-300'
 		>
 			<div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
 				<div className='grid lg:grid-cols-2 gap-12 items-center'>
@@ -13,7 +13,7 @@ export function Hero() {
 						<div className='space-y-4'>
 							<h1 className='text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight'>
 								Transformando Vidas Através da
-								<span className='text-primary-800 dark:text-primary-400 block'>
+								<span className='text-primary-700 dark:text-primary-400 block'>
 									Inclusão e Acessibilidade
 								</span>
 							</h1>
@@ -28,16 +28,16 @@ export function Hero() {
 						<div className='flex flex-col sm:flex-row gap-4'>
 							<a
 								href='#about'
-								className='bg-primary-800 dark:bg-primary-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary-900 dark:hover:bg-primary-700 transition-colors duration-200 flex items-center justify-center group'
+								className='bg-primary-700 dark:bg-primary-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary-800 dark:hover:bg-primary-700 transition-colors duration-200 flex items-center justify-center group'
 							>
 								Conheça Nosso Trabalho
 								<ArrowRight className='ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-200' />
 							</a>
 							<a
 								href='#contact'
-								className='bg-white dark:bg-dark-800 text-primary-800 dark:text-primary-400 px-8 py-4 rounded-lg font-semibold border-2 border-primary-800 dark:border-primary-600 hover:bg-primary-50 dark:hover:bg-dark-700 transition-colors duration-200 flex items-center justify-center'
+								className='bg-transparent underline text-primary-800 dark:text-primary-400 px-8 py-4 rounded-lg font-semibold hover:no-underline transition-colors duration-200 flex items-center justify-center'
 							>
-								Como Ajudar
+								Como Ajudar?
 							</a>
 						</div>
 
@@ -56,7 +56,7 @@ export function Hero() {
 							</div>
 							<div className='text-center'>
 								<div className='flex items-center justify-center mb-2'>
-									<Heart className='w-8 h-8 text-secondary-600 dark:text-secondary-400' />
+									<Heart className='w-8 h-8 text-accent-600 dark:text-accent-400' />
 								</div>
 								<div className='text-3xl font-bold text-gray-900 dark:text-white'>
 									15
