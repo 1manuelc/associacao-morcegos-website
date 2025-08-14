@@ -46,7 +46,7 @@ export function Impact() {
 	return (
 		<section
 			id='impact'
-			className='py-20 bg-zinc-50 dark:bg-zinc-900 transition-colors duration-300'
+			className='py-20 bg-white dark:bg-zinc-900 transition-colors duration-300'
 		>
 			<div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
 				<div className='text-center mb-16'>
@@ -85,7 +85,7 @@ export function Impact() {
 					})}
 				</div>
 				{/* Testimonials */}
-				<div className='bg-zinc-200 dark:bg-zinc-800 rounded-2xl p-8 md:p-12'>
+				<div className='bg-primary-100 dark:bg-primary-950 rounded-2xl p-8 md:p-12'>
 					<h3 className='text-3xl font-bold text-gray-900 dark:text-white text-center mb-12'>
 						Histórias de Transformação
 					</h3>
@@ -94,7 +94,7 @@ export function Impact() {
 						{testimonials.map((testimonial, index) => (
 							<div
 								key={index}
-								className='bg-white dark:bg-zinc-700 p-6 rounded-xl shadow-sm'
+								className='bg-white dark:bg-primary-900 p-6 rounded-xl shadow-sm'
 							>
 								<div className='text-center mb-2'>
 									<div className='font-semibold text-gray-900 dark:text-white'>
@@ -102,7 +102,7 @@ export function Impact() {
 									</div>
 								</div>
 
-								<p className='text-gray-700 dark:text-gray-300 italic leading-relaxed'>
+								<p className='text-gray-800 dark:text-gray-200 italic leading-relaxed'>
 									"{testimonial.text}"
 								</p>
 							</div>
