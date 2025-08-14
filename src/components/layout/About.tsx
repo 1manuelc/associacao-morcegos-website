@@ -32,11 +32,11 @@ export function About() {
 	return (
 		<section
 			id='about'
-			className='py-20 bg-white dark:bg-dark-900 transition-colors duration-300'
+			className='py-20 bg-white dark:bg-neutral-900 transition-colors duration-300'
 		>
 			<div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
 				<div className='text-center mb-16'>
-					<h2 className='text-4xl font-bold text-gray-900 dark:text-white mb-4'>
+					<h2 className='text-4xl font-bold text-neutral-900 dark:text-white mb-4'>
 						Sobre a Associação dos Morcegos
 					</h2>
 					<p className='text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed'>
@@ -54,15 +54,15 @@ export function About() {
 						return (
 							<div
 								key={index}
-								className='bg-gray-50 dark:bg-dark-800 p-8 rounded-xl hover:shadow-lg transition-all duration-300 text-center group'
+								className='bg-neutral-50 dark:bg-neutral-800 p-8 rounded-xl hover:shadow-lg transition-all duration-300 text-center group'
 							>
 								<div className='bg-primary-800 dark:bg-primary-600 w-16 h-16 rounded-lg flex items-center justify-center mx-auto mb-6 group-hover:bg-primary-900 dark:group-hover:bg-primary-700 transition-colors duration-300'>
 									<Icon className='w-8 h-8 text-white' />
 								</div>
-								<h3 className='text-xl font-semibold text-gray-900 dark:text-white mb-4'>
+								<h3 className='text-xl font-semibold text-neutral-900 dark:text-white mb-4'>
 									{value.title}
 								</h3>
-								<p className='text-gray-600 dark:text-gray-300 leading-relaxed'>
+								<p className='text-neutral-600 dark:text-neutral-300 leading-relaxed'>
 									{value.description}
 								</p>
 							</div>
@@ -80,10 +80,10 @@ export function About() {
 						/>
 					</div>
 					<div className='space-y-6'>
-						<h3 className='text-3xl font-bold text-gray-900 dark:text-white'>
+						<h3 className='text-3xl font-bold text-neutral-900 dark:text-white'>
 							Nossa História
 						</h3>
-						<div className='space-y-4 text-gray-600 dark:text-gray-300'>
+						<div className='space-y-4 text-neutral-600 dark:text-neutral-300'>
 							<p>
 								A Associação foi fundada em Sobral em 23 de agosto de 2013, 
 								com o objetivo de promover a educação e a autonomia para 
