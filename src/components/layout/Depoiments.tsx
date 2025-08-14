@@ -1,25 +1,16 @@
 export function Depoiments() {
 	const testimonials = [
 		{
-			name: 'Maria Silva',
-			role: 'Participante do Programa de Capacitação',
-			text: 'A Associação dos Morcegos me deu muito mais que conhecimento técnico. Me deu confiança para sonhar e realizar. Hoje trabalho como telefonista em uma grande empresa e sou independente.',
-			image:
-				'https://images.pexels.com/photos/3768911/pexels-photo-3768911.jpeg?auto=compress&cs=tinysrgb&w=150',
+			name: 'Elizabeth Cristina',
+			text: 'Estar na Associação é privilégio, amplio meus conhecimentos através das oficinas e aulas ministradas pelos professores que nos trata com carinho, faço parte do projeto Asas so Saber - Morceguinhos.',
 		},
 		{
-			name: 'João Santos',
-			role: 'Ex-aluno de Braille',
-			text: 'Aprender Braille foi como ganhar uma nova vida. Posso ler novamente, estudar e me manter atualizado. O carinho e paciência dos professores fizeram toda a diferença.',
-			image:
-				'https://images.pexels.com/photos/5699479/pexels-photo-5699479.jpeg?auto=compress&cs=tinysrgb&w=150',
+			name: 'Ana Carolina',
+			text: 'Gosto das atividades da Associação, tenho independência, aprendi a viver através das orientações, participo com atenção dos conteúdos',
 		},
 		{
-			name: 'Ana Costa',
-			role: 'Mãe de participante',
-			text: 'Ver minha filha florescer na Associação não tem preço. Ela desenvolveu autonomia, fez amigos e hoje está cursando faculdade. Somos eternamente gratos.',
-			image:
-				'https://images.pexels.com/photos/3768131/pexels-photo-3768131.jpeg?auto=compress&cs=tinysrgb&w=150',
+			name: 'Cícero',
+			text: 'Venho para a Associação para ampliar meus conhecimentos, já aprendi muito com meus amigos associados.',
 		},
 	];
 
@@ -40,18 +31,8 @@ export function Depoiments() {
 							className='bg-zinc-100 dark:bg-zinc-700 p-6 rounded-xl shadow-sm'
 						>
 							<div className='flex items-center mb-4'>
-								<img
-									src={testimonial.image}
-									alt={testimonial.name}
-									className='w-12 h-12 rounded-full object-cover mr-4'
-								/>
-								<div>
-									<div className='font-semibold text-gray-900 dark:text-white'>
-										{testimonial.name}
-									</div>
-									<div className='text-sm text-gray-600 dark:text-gray-400'>
-										{testimonial.role}
-									</div>
+								<div className='font-semibold text-gray-900 dark:text-white'>
+									{testimonial.name}
 								</div>
 							</div>
 							<p className='text-gray-700 dark:text-gray-300 italic leading-relaxed'>
