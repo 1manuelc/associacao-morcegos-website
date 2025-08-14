@@ -1,8 +1,6 @@
 import {
 	Eye,
-	Facebook,
 	Instagram,
-	Linkedin,
 	Mail,
 	Phone,
 	MapPin,
@@ -20,11 +18,13 @@ export function Footer() {
 	];
 
 	const services = [
-		'Alfabetização em Braille',
-		'Tecnologia Assistiva',
-		'Capacitação Profissional',
-		'Orientação e Mobilidade',
-		'Grupos de Apoio',
+		'Alfabetização em Braille e Matemática',
+		'Mobilidade Urbana',
+		'Forró no Escuro',
+		'Oficinas de Música',
+		'Massoterapia',
+		'Muay Thai',
+		'Culinária no Escuro'
 	];
 
 	return (
@@ -45,28 +45,15 @@ export function Footer() {
 							</div>
 						</div>
 						<p className='text-gray-300 dark:text-gray-400 mb-6 leading-relaxed'>
-							Há 15 anos transformando vidas através da inclusão social e
-							acessibilidade, promovendo autonomia e oportunidades para pessoas
-							com deficiência visual.
+							A Associação busca ser um agente definitivo incorporando a comunidade no mapa do desenvolvimento do Estado do Ceará, destacando a expansão de Educação Inclusiva através deste projeto.
 						</p>
 						<div className='flex space-x-4'>
 							<a
-								href='#'
-								className='bg-gray-800 dark:bg-dark-800 p-2 rounded-lg hover:bg-gray-700 dark:hover:bg-dark-700 transition-colors duration-200'
-							>
-								<Facebook className='w-5 h-5' />
-							</a>
-							<a
-								href='#'
+							target='blank'
+								href='https://www.instagram.com/associacao_morcegos?igsh=MTE5Y2Y4OTNtbnBldg=='
 								className='bg-gray-800 dark:bg-dark-800 p-2 rounded-lg hover:bg-gray-700 dark:hover:bg-dark-700 transition-colors duration-200'
 							>
 								<Instagram className='w-5 h-5' />
-							</a>
-							<a
-								href='#'
-								className='bg-gray-800 dark:bg-dark-800 p-2 rounded-lg hover:bg-gray-700 dark:hover:bg-dark-700 transition-colors duration-200'
-							>
-								<Linkedin className='w-5 h-5' />
 							</a>
 						</div>
 					</div>
@@ -90,7 +77,7 @@ export function Footer() {
 
 					{/* Services */}
 					<div>
-						<h4 className='font-semibold text-lg mb-6'>Nossos Serviços</h4>
+						<h4 className='font-semibold text-lg mb-6'>Nossas Oficinas</h4>
 						<ul className='space-y-3'>
 							{services.map((service, index) => (
 								<li key={index} className='text-gray-300 dark:text-gray-400'>
@@ -108,10 +95,10 @@ export function Footer() {
 								<MapPin className='w-5 h-5 text-gray-400 dark:text-gray-500 mr-3 mt-1 flex-shrink-0' />
 								<div>
 									<p className='text-gray-300 dark:text-gray-400'>
-										Rua da Inclusão, 123 - Centro
+										Sítio Moitinga
 									</p>
 									<p className='text-gray-300 dark:text-gray-400'>
-										São Paulo - SP, 01234-567
+										Ubajara - CE, 62350-000
 									</p>
 								</div>
 							</div>
@@ -137,20 +124,6 @@ export function Footer() {
 							© {currentYear} Associação dos Morcegos. Todos os direitos
 							reservados.
 						</p>
-						<div className='flex space-x-6'>
-							<a
-								href='#'
-								className='text-gray-400 dark:text-gray-500 hover:text-white transition-colors duration-200'
-							>
-								Política de Privacidade
-							</a>
-							<a
-								href='#'
-								className='text-gray-400 dark:text-gray-500 hover:text-white transition-colors duration-200'
-							>
-								Termos de Uso
-							</a>
-						</div>
 					</div>
 				</div>
 			</div>
