@@ -1,4 +1,5 @@
 import { Target, Eye, Lightbulb, Globe } from 'lucide-react';
+import escola from '../assets/escola.jpg'
 
 export function About() {
 	const values = [
@@ -73,8 +74,8 @@ export function About() {
 				<div className='mt-20 grid lg:grid-cols-2 gap-12 items-center'>
 					<div>
 						<img
-							src='https://images.pexels.com/photos/7176326/pexels-photo-7176326.jpeg?auto=compress&cs=tinysrgb&w=800'
-							alt='Atividade em grupo da associação'
+							src={escola}
+							alt='Escola Preparatória no Sítio Moitinga'
 							className='w-full h-80 object-cover rounded-xl shadow-lg'
 						/>
 					</div>
