@@ -1,4 +1,5 @@
-import { Eye, Instagram, Mail, Phone, MapPin } from 'lucide-react';
+import { Instagram, Mail, Phone, MapPin } from 'lucide-react';
+import { MainLogo } from '../fragments/MainLogo';
 
 export function Footer() {
 	const currentYear = new Date().getFullYear();
@@ -28,11 +29,17 @@ export function Footer() {
 					{/* Logo and Description */}
 					<div className='lg:col-span-1'>
 						<div className='flex items-center space-x-3 mb-6'>
-							<div className='bg-primary-600 dark:bg-primary-500 p-2 rounded-lg'>
-								<Eye className='w-6 h-6 text-white' />
-							</div>
+							{/* Logo */}
+							<a href='#home' className='flex flex-col gap-2 items-start'>
+								<MainLogo
+									variant='icon'
+									className='h-6 invert hover:opacity-60 transition-opacity duration-200'
+								/>
+							</a>
 							<div>
-								<h3 className='font-bold text-lg'>Associação dos Morcegos</h3>
+								<h3 className='font-bold text-lg'>
+									Associação Morcegos em Ação
+								</h3>
 								<p className='text-sm text-zinc-400 dark:text-zinc-500'>
 									CNPJ: 18.866.308/0001-80
 								</p>

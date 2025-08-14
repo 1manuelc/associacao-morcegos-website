@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import { Menu, X, Eye } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { ThemeToggle } from '../fragments/ThemeToggle';
+import { MainLogo } from '../fragments/MainLogo';
 
 export function Header() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,19 +19,12 @@ export function Header() {
 			<div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
 				<div className='flex justify-between items-center h-16'>
 					{/* Logo */}
-					<div className='flex items-center space-x-3'>
-						<div className='bg-primary-800 dark:bg-primary-600 p-2 rounded-lg'>
-							<Eye className='w-6 h-6 text-white' />
-						</div>
-						<div>
-							<h1 className='font-bold text-base text-zinc-900 dark:text-white'>
-								Associação dos Morcegos
-							</h1>
-							<p className='hidden lg:flex text-xs text-zinc-600 dark:text-zinc-400'>
-								MORCEGOS EM AÇÃO
-							</p>
-						</div>
-					</div>
+					<a href='#home' className='flex flex-col gap-2 items-start'>
+						<MainLogo
+							variant='horizontal'
+							className='h-8 md:h-10 lg:h-12 dark:invert hover:opacity-60 transition-opacity duration-200'
+						/>
+					</a>
 
 					{/* Desktop Navigation and Theme Toggle */}
 					<div className='hidden md:flex items-center justify-center space-x-6'>
