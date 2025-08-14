@@ -9,7 +9,7 @@ export function Header() {
 		{ name: 'Início', href: '#home' },
 		{ name: 'Sobre Nós', href: '#about' },
 		{ name: 'Atividades', href: '#activities' },
-		{ name: 'Impacto', href: '#impact' },
+		{ name: 'Depoimentos', href: '#depoiments' },
 		{ name: 'Contato', href: '#contact' },
 	];
 
@@ -27,7 +27,7 @@ export function Header() {
 								Associação dos Morcegos
 							</h1>
 							<p className='hidden lg:flex text-xs text-zinc-600 dark:text-zinc-400'>
-								Incluindo através da acessibilidade
+								MORCEGOS EM AÇÃO
 							</p>
 						</div>
 					</div>

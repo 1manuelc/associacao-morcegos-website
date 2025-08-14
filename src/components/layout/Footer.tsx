@@ -7,7 +7,7 @@ export function Footer() {
 		{ name: 'Início', href: '#home' },
 		{ name: 'Sobre Nós', href: '#about' },
 		{ name: 'Atividades', href: '#activities' },
-		{ name: 'Impacto', href: '#impact' },
+		{ name: 'Depoimentos', href: '#depoiments' },
 		{ name: 'Contato', href: '#contact' },
 	];
 
@@ -34,7 +34,7 @@ export function Footer() {
 							<div>
 								<h3 className='font-bold text-lg'>Associação dos Morcegos</h3>
 								<p className='text-sm text-zinc-400 dark:text-zinc-500'>
-									Incluindo através da acessibilidade
+									CNPJ: 18.866.308/0001-80
 								</p>
 							</div>
 						</div>

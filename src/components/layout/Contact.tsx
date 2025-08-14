@@ -14,19 +14,18 @@ export function Contact() {
 		{
 			icon: MapPin,
 			title: 'Endereço',
-			details: ['Rua da Inclusão, 123 - Centro', 'São Paulo - SP, 01234-567'],
+			details: ['Sítio Moitinga - Zona Rural', 'Ubajara - CE, 62350-000'],
 		},
 		{
 			icon: Phone,
 			title: 'Telefones',
-			details: ['(11) 3456-7890', '(11) 99876-5432'],
+			details: ['(11) 3456-7890'],
 		},
 		{
 			icon: Mail,
 			title: 'E-mail',
 			details: [
 				'contato@associacaomorcegos.org.br',
-				'voluntarios@associacaomorcegos.org.br',
 			],
 		},
 		{
@@ -71,14 +70,13 @@ export function Contact() {
 					</h2>
 					<p className='text-xl text-zinc-600 dark:text-zinc-300 max-w-3xl mx-auto'>
 						Estamos sempre dispostos a conversar. Entre em contato conosco para
-						saber mais sobre nosso trabalho ou como você pode contribuir.
+						saber mais sobre nossas oficinas ou como você pode contribuir.
 					</p>
 				</div>
 
 				<div className='flex gap-12 items-center justify-center'>
-					{/* TODO: ajeitar flex */}
 					{/* Contact Info & Help Ways */}
-					<div className='flex flex-column space-x-6'>
+					<div className='grid md:grid-cols-2 gap-8'>
 						{/* Contact Information */}
 						<div className='bg-white dark:bg-zinc-900 rounded-xl shadow-md p-8'>
 							<h3 className='text-2xl font-bold text-zinc-900 dark:text-white mb-6'>

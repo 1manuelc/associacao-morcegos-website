@@ -1,10 +1,11 @@
 import {
-	BookOpen,
-	Laptop,
-	Briefcase,
-	Music,
-	Coffee,
-	Users,
+  BookOpen,
+  Footprints,
+  Disc3,
+  Guitar,
+  HandHeart,
+  Dumbbell,
+  Utensils
 } from 'lucide-react';
 import braille from '../assets/braille.jpeg';
 import musica from '../assets/musica.jpeg';
@@ -15,64 +16,68 @@ import mobilidade from '../assets/mobilidade-urbana.jpg';
 import culinaria from '../assets/culinaria-no-escuro.jpeg';
 
 export function Activities() {
-	const activities = [
-		{
-			icon: BookOpen,
-			title: 'Alfabetização em Braille e Matemática',
-			description:
-				'Aulas de leitura e escrita em Braille e no computador, além de noções de matemática aplicadas com métodos adaptados para pessoas com deficiência visual.',
-			image: braille,
-			className: 'md:col-span-1',
-		},
-		{
-			icon: Laptop,
-			title: 'Mobilidade Urbana',
-			description:
-				'Treinamento de orientação e uso da bengala para locomoção segura, com técnicas para se deslocar em ambientes conhecidos e estratégias para explorar novos espaços com autonomia.',
-			image: mobilidade,
-			className: 'md:col-span-2',
-		},
-		{
-			icon: Briefcase,
-			title: 'Forró no Escuro',
-			description:
-				'Atividade descontraída para se movimentar e socializar, dançando forró em um ambiente inclusivo, com condução e interação entre os participantes.',
-			image: forro,
-			className: 'md:col-span-1',
-		},
-		{
-			icon: Music,
-			title: 'Oficinas de Música',
-			description:
-				'Aulas de instrumentos como violão e teclado, canto, estimulando a expressão artística, a sensibilidade musical e o desenvolvimento cognitivo.',
-			image: musica,
-			className: 'md:col-span-1',
-		},
-		{
-			icon: Coffee,
-			title: 'Massoterapia',
-			description:
-				'Sessões voltadas para o bem-estar físico e emocional, proporcionando relaxamento, troca de experiências e acolhimento.',
-			image: massoteraria,
-			className: 'md:col-span-1',
-		},
-		{
-			icon: Users,
-			title: 'Muay Thai',
-			description:
-				'Aulas de Muay Thai ministradas por professora voluntária, promovendo condicionamento físico, disciplina e interação social.',
-			image: muay_thai,
-			className: 'md:col-span-2',
-		},
-		{
-			icon: Users,
-			title: 'Culinária no Escuro',
-			description:
-				'Atividade adaptada que desenvolve habilidades para manusear utensílios e preparar receitas com segurança, estimulando a autonomia e a criatividade.',
-			image: culinaria,
-			className: 'md:col-span-1',
-		},
-	];
+  const activities = [
+    {
+      icon: BookOpen,
+      title: 'Alfabetização em Braille e Matemática',
+      description:
+        "Aulas de leitura e escrita em Braille e no computador, além de noções de matemática aplicadas com métodos adaptados para pessoas com deficiência visual.",
+      image: braille,
+      className: 'md:col-span-1',
+    },
+    {
+      icon: Footprints,
+      title: 'Mobilidade Urbana',
+      description:
+        'Treinamento de orientação e uso da bengala para locomoção segura, com técnicas para se deslocar em ambientes conhecidos e estratégias para explorar novos espaços com autonomia.',
+      image:
+        mobilidade,
+      className: 'md:col-span-2',
+    },
+    {
+      icon: Disc3,
+      title: 'Forró no Escuro',
+      description:
+        'Atividade descontraída para se movimentar e socializar, dançando forró em um ambiente inclusivo, com condução e interação entre os participantes.',
+      image:
+        forro,
+      className: 'md:col-span-1',
+    },
+    {
+      icon: Guitar,
+      title: 'Oficinas de Música',
+      description:
+        'Aulas de instrumentos como violão e teclado, canto, estimulando a expressão artística, a sensibilidade musical e o desenvolvimento cognitivo.',
+      image:
+        musica,
+      className: 'md:col-span-1',
+    },
+    {
+      icon: HandHeart,
+      title: 'Massoterapia',
+      description:
+        'Sessões voltadas para o bem-estar físico e emocional, proporcionando relaxamento, troca de experiências e acolhimento.',
+      image:
+        massoteraria,
+      className: 'md:col-span-1',
+    },
+    {
+      icon: Dumbbell,
+      title: 'Muay Thai',
+      description: 'Aulas de Muay Thai ministradas por professora voluntária, promovendo condicionamento físico, disciplina e interação social.',
+      image:
+        muay_thai,
+      className: 'md:col-span-2',
+    },
+    {
+      icon: Utensils,
+      title: 'Culinária no Escuro',
+      description: 'Atividade adaptada que desenvolve habilidades para manusear utensílios e preparar receitas com segurança, estimulando a autonomia e a criatividade.',
+      image:
+        culinaria,
+      className: 'md:col-span-1',
+    }
+  ];
 
 	return (
 		<section
